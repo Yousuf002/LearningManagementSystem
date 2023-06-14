@@ -1,0 +1,7 @@
+SDA,se123,3
+Prob,mt123,3
+BPE,se124,3
+german,mm123,3
+marketing,mm111,3
+OOP,cs101,3
+Database,cs1010,3

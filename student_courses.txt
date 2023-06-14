@@ -1,0 +1,16 @@
+fatima,1139,SDA
+fatima,1139,Prob
+fatima,1139,BPE
+saif,1221,SDA
+saif,1221,Prob
+saif,1221,BPE
+mahad,1239,SDA
+mahad,1239,Prob
+musa,1206,Prob
+musa,1206,BPE
+bilal,1112,Prob
+bilal,1112,BPE
+riyaan,1101,BPE
+riyaan,1101,german
+saif,1221,german
+saif,1221,marketing

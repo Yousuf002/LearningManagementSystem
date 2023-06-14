@@ -1,0 +1,9 @@
+abuzar,1994,1994@nu.edu.pk,1994
+sohaib,1114,1114@nu.edu.pk,1114
+Omer ,1105,1105@nu.edu.pk,1105
+Ubaid,541,0541@nu.edu.pk,0541
+ahmed,1152,1152@nu.edu.pk,1152
+abdurrehman,1151,1151@nu.edu.pk,1151
+Ali,1170,1170@nu.edu.pk,1170
+Basit,1205,1205@nu.edu.pk,1205
+Uzairkhan,1111,1111@nu.edu.pk,1111

@@ -1,0 +1,9 @@
+abuzar,1994,SDA,se123
+sohaib,1114,Prob,mt123
+Omer,1105,Prob,mt123
+sohaib,1114,SDA,se123
+Ubaid,541,SDA,se123
+Ali,1170,SDA,se123
+Ali,1170,Prob,mt123
+Basit,1205,SDA,se123
+Uzairkhan,1111,SDA,se123

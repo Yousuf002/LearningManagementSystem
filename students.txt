@@ -1,0 +1,7 @@
+fatima,1139,1139@nu.edu.pk,1139
+abdullah,1215,1215@nu.edu.pk,1215
+riyaan,1101,1101@nu.edu.pk,1101
+bilal,1112,1112@nu.edu.pk,1112
+mahad,1239,1239@nu.edu.pk,1239
+saif,1221,1221@nu.edu.pk,1221
+musa,1206,1206@nu.edu.pk,1206

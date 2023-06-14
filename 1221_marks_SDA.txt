@@ -1,0 +1,4 @@
+Quiz: 30
+Assignment: 40
+Final: 50
+Final: 100

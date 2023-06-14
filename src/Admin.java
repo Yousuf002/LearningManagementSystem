@@ -509,62 +509,43 @@ public class Admin {
         }
         return false;
     }
-    public static boolean updateStudentFee(String studentName, int studentId, double feeAmount) {
-        String fileName = "students.txt";
-        String tempFileName = "temp.txt";
-        String line;
-        boolean found = false;
-    
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName));
-             BufferedWriter writer = new BufferedWriter(new FileWriter(tempFileName))) {
-    
-            while ((line = reader.readLine()) != null) {
-                String[] data = line.split(",");
-                int currentId;
-                try {
-                    currentId = Integer.parseInt(data[1].trim());
-                } catch (NumberFormatException e) {
-                    continue; // Skip invalid lines
-                }
-    
-                if (data[0].equals(studentName) && currentId == studentId) {
-                    data[data.length - 1] = data[data.length - 2] + "," + feeAmount;
-                    line = String.join(",", data);
-                    found = true;
-                }
-                writer.write(line);
-                writer.newLine();
+public static boolean updateStudentFee(String studentName, int studentId, double feeAmount) {
+    String fileName = "students.txt";
+    String feeFileName = "studentFee.txt";
+    String line;
+    boolean found = false;
+
+    try (BufferedReader reader = new BufferedReader(new FileReader(fileName));
+         BufferedWriter writer = new BufferedWriter(new FileWriter(feeFileName, true))) {
+
+        while ((line = reader.readLine()) != null) {
+            String[] data = line.split(",");
+            int currentId;
+            try {
+                currentId = Integer.parseInt(data[1].trim());
+            } catch (NumberFormatException e) {
+                continue; // Skip invalid lines
             }
-    
-        } catch (IOException e) {
-            System.out.println("An error occurred while updating the student fee.");
+
+            if (data[0].equals(studentName) && currentId == studentId) {
+                writer.write(studentName + "," + studentId + "," + feeAmount);
+                writer.newLine();
+                found = true;
+            }
         }
-    
-        // Delete the original file
-        File originalFile = new File(fileName);
-        if (!originalFile.delete()) {
-            System.out.println("An error occurred while updating the student fee.");
-            return false;
-        }
-    
-        // Rename the temporary file to the original file
-        File tempFile = new File(tempFileName);
-        if (!tempFile.renameTo(originalFile)) {
-            System.out.println("An error occurred while updating the student fee.");
-            return false;
-        }
-    
-        if (found) {
-            System.out.println("Student fee updated successfully.");
-            return true;
-        } else {
-            System.out.println("Student not found.");
-            return false;
-        }
+
+    } catch (IOException e) {
+        System.out.println("An error occurred while updating the student fee.");
     }
-    
-    
-    
+
+    if (found) {
+        System.out.println("Student fee updated successfully.");
+        return true;
+    } else {
+        System.out.println("Student not found.");
+        return false;
+    }
+}
 }
 
    
